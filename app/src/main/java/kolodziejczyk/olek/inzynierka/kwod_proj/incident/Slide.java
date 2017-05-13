@@ -1,4 +1,4 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident;
 
 import java.io.Serializable;
 

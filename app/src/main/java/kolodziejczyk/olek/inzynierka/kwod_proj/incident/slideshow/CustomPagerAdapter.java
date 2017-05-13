@@ -1,4 +1,4 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incident_slideshow;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.slideshow;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
-import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Slide;
 
 /**
  * Created by A. Kołodziejczyk on 2017-05-11.

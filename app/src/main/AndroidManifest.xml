@@ -21,11 +21,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".incidents_list.IncidentsListActivity"
+            android:name=".incident.list.IncidentsListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".incident_slideshow.IncidentSlideshowActivity"
+            android:name=".incident.slideshow.IncidentSlideshowActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".report.ReportActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

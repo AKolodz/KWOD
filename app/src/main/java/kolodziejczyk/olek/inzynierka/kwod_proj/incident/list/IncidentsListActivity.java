@@ -1,24 +1,21 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.list;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Incident;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
-import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incident_slideshow.IncidentSlideshowActivity;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp.IncidentListMVP;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp.IncidentListModel;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp.IncidentListPresenter;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.slideshow.IncidentSlideshowActivity;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.mvp.IncidentListMVP;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.mvp.IncidentListModel;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.mvp.IncidentListPresenter;
 
 public class IncidentsListActivity extends AppCompatActivity implements IncidentListMVP.View {
 

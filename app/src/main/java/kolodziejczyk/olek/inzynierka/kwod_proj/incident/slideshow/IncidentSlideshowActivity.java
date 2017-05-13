@@ -1,6 +1,5 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incident_slideshow;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.slideshow;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +9,8 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
-import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.IncidentsListActivity;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Slide;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.IncidentsListActivity;
 
 /**
  * Created by A. Kołodziejczyk on 2017-05-11.

@@ -1,4 +1,4 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.list;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Incident;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
 import lombok.Getter;
 import lombok.Setter;
