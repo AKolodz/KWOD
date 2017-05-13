@@ -7,46 +7,52 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incident_slideshow.IncidentSlideshowActivity;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident_slideshow.IncidentSlideshowActivity;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp.IncidentListMVP;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp.IncidentListModel;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp.IncidentListPresenter;
 
-public class IncidentsListActivity extends AppCompatActivity {
+public class IncidentsListActivity extends AppCompatActivity implements IncidentListMVP.View {
+
+    public static final String SLIDES = "EXTRA_SLIDES";
 
     @BindView(R.id.recycler_incidents)
     RecyclerView recyclerView;
 
+    private IncidentListPresenter presenter;
+
     private IncidentsListAdapter adapter = new IncidentsListAdapter(new ArrayList<>(), incident -> {
         Intent intent = new Intent(getApplicationContext(), IncidentSlideshowActivity.class);
-        //todo: add list with images from chosen incident to intent
+        intent.putExtra(SLIDES, incident.getSlides());
         startActivity(intent);
     });
-    private List<Incident> incidentList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.incidents_list_activity);
         ButterKnife.bind(this);
-        fillAdapter();
-        setRecyclerView();
-    }
 
-    private void fillAdapter() {
-        //todo: presenter calls from here
-        incidentList.add(new Incident("Podtopienie", R.mipmap.ic_launcher));
-        incidentList.add(new Incident("Poparzenie", R.mipmap.ic_launcher_round));
-        adapter.setIncidentsList(incidentList);
-        adapter.notifyDataSetChanged();
+        presenter = new IncidentListPresenter(new IncidentListModel(), this);
+        presenter.getIncidentsList();
+
+        setRecyclerView();
     }
 
     private void setRecyclerView() {
         //TODO: Spacing with recyclerView.addItemDecoration(decorator);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public void showIncidents(ArrayList<Incident> incidents) {
+        adapter.setIncidentsList(incidents);
+        adapter.notifyDataSetChanged();
     }
 }

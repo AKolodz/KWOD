@@ -1,5 +1,7 @@
 package kolodziejczyk.olek.inzynierka.kwod_proj;
 
+import java.util.ArrayList;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,5 +17,5 @@ import lombok.Setter;
 public class Incident {
     private String name;
     private int iconResource;
-    //private int[] slides; todo: implement this or check if we can use list of ints here
+    private ArrayList<String> slides;
 }

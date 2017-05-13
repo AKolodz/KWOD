@@ -62,6 +62,7 @@ dependencies {
     apt "org.projectlombok:lombok:$lombok_version"
     compile 'com.jakewharton:butterknife:8.5.1'
     apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
     //
     testCompile 'junit:junit:4.12'
