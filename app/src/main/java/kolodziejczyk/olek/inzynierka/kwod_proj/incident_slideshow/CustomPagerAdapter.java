@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
+import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
 
 /**
  * Created by A. Kołodziejczyk on 2017-05-11.
@@ -26,11 +28,14 @@ public class CustomPagerAdapter extends PagerAdapter {
     @BindView(R.id.slide_image_view)
     ImageView slideImage;
 
+    @BindView(R.id.image_description)
+    TextView slideDescription;
+
     private Context context;
     private LayoutInflater inflater;
-    private ArrayList<String> slides;
+    private ArrayList<Slide> slides;
 
-    public CustomPagerAdapter(Context context, ArrayList<String> slides) {
+    public CustomPagerAdapter(Context context, ArrayList<Slide> slides) {
         this.context = context;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.slides = slides;
@@ -48,7 +53,8 @@ public class CustomPagerAdapter extends PagerAdapter {
     }
 
     private void setDataInsideCard(int position) {
-        Picasso.with(context).load(slides.get(position)).into(slideImage);
+        Picasso.with(context).load(slides.get(position).getUrl()).into(slideImage);
+        slideDescription.setText(slides.get(position).getDescription());
     }
 
 

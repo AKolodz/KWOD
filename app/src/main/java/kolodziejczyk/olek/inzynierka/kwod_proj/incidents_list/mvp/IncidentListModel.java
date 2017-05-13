@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
+import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
 import lombok.NoArgsConstructor;
 
 /**
@@ -13,15 +14,15 @@ import lombok.NoArgsConstructor;
 public class IncidentListModel implements IncidentListMVP.Model {
 
     ArrayList<Incident> incidents = new ArrayList<>();
-    ArrayList<ArrayList<String>> slidesArray = new ArrayList<>();
-    ArrayList<String> urlList = new ArrayList<>();
+    ArrayList<ArrayList<Slide>> slidesArray = new ArrayList<>();
+    ArrayList<Slide> urlList = new ArrayList<>();
 
     @Override
     public ArrayList<Incident> getIncidentsList() {
         //TODO: make it more clear, add rest of incidents here
-        urlList.add("http://pobierak.jeja.pl/images/5/f/a/143031_wonsz.jpg");
-        urlList.add("http://pobierak.jeja.pl/images/5/6/2/154429_wonsz.jpg");
-        urlList.add("http://pobierak.jeja.pl/images/0/1/e/126850_olej-szkole.jpg");
+        urlList.add(new Slide("http://pobierak.jeja.pl/images/5/f/a/143031_wonsz.jpg", "Wonsz wiolinowy"));
+        urlList.add(new Slide("http://pobierak.jeja.pl/images/5/6/2/154429_wonsz.jpg", "Wonsz do morza"));
+        urlList.add(new Slide("http://pobierak.jeja.pl/images/0/1/e/126850_olej-szkole.jpg", "Wonsz LamAlpaka"));
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
@@ -33,7 +34,7 @@ public class IncidentListModel implements IncidentListMVP.Model {
         return incidents;
     }
 
-    private void addIncident(String name, int iconRes, ArrayList<String> slides) {
+    private void addIncident(String name, int iconRes, ArrayList<Slide> slides) {
         Incident tempIncident = new Incident(name, iconRes, slides);
         incidents.add(tempIncident);
     }
