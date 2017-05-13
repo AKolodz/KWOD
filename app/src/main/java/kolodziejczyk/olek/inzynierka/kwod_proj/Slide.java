@@ -1,6 +1,6 @@
 package kolodziejczyk.olek.inzynierka.kwod_proj;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,14 +8,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * Created by A. Kołodziejczyk on 2017-05-11.
+ * Created by A. Kołodziejczyk on 2017-05-13.
  */
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Incident {
-    private String name;
-    private int iconResource;
-    private ArrayList<Slide> slides;
+@Getter
+@Setter
+public class Slide implements Serializable {
+    private String url;
+    private String description;
 }

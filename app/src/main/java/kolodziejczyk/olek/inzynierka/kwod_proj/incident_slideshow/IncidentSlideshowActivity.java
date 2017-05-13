@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
+import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
 import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.IncidentsListActivity;
 
 /**
@@ -21,21 +22,16 @@ public class IncidentSlideshowActivity extends AppCompatActivity {
     @BindView(R.id.pager)
     ViewPager viewPager;
 
-    private ArrayList<String> slides = new ArrayList<>();
+    private ArrayList<Slide> slides = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.slideshow_activity);
         ButterKnife.bind(this);
-        setSlides();
+        slides = (ArrayList<Slide>) getIntent().getSerializableExtra(IncidentsListActivity.SLIDES);
         setViewPager();
 
-    }
-
-    public void setSlides() {
-        Intent intent = getIntent();
-        slides = intent.getExtras().getStringArrayList(IncidentsListActivity.SLIDES);
     }
 
     private void setViewPager() {
