@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
@@ -24,18 +28,18 @@ public class CustomPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater inflater;
-    private int[] slides;
+    private ArrayList<String> slides;
 
-    public CustomPagerAdapter(Context context, int[] slides) {
+    public CustomPagerAdapter(Context context, ArrayList<String> slides) {
         this.context = context;
-        this.inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.slides=slides;
+        this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.slides = slides;
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        View itemView = inflater.inflate(R.layout.slideshow_item, container, false); //todo: short description under image?
-        ButterKnife.bind(this,itemView); //todo: maybe context here?
+        View itemView = inflater.inflate(R.layout.slideshow_item, container, false);
+        ButterKnife.bind(this, itemView);
         setDataInsideCard(position);
 
         container.addView(itemView);
@@ -44,13 +48,13 @@ public class CustomPagerAdapter extends PagerAdapter {
     }
 
     private void setDataInsideCard(int position) {
-        slideImage.setImageResource(slides[position]);
+        Picasso.with(context).load(slides.get(position)).into(slideImage);
     }
 
 
     @Override
     public int getCount() {
-        return slides.length;
+        return slides.size();
     }
 
     @Override
