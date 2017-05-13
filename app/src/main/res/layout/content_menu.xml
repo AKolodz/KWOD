@@ -39,7 +39,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="4dp"
-        android:text="Prepare Report" />
+        android:text="@string/prepare_report_button" />
 
     <Button
         android:id="@+id/incident_list_button"
@@ -47,9 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/report_button"
         android:layout_centerHorizontal="true"
-
         android:layout_margin="4dp"
-        android:text="Incidents List" />
+        android:text="@string/incidents_list_button" />
 
 
 </RelativeLayout>

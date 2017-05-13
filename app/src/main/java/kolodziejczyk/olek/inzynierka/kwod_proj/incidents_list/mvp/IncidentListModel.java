@@ -23,7 +23,13 @@ public class IncidentListModel implements IncidentListMVP.Model {
         urlList.add("http://pobierak.jeja.pl/images/5/6/2/154429_wonsz.jpg");
         urlList.add("http://pobierak.jeja.pl/images/0/1/e/126850_olej-szkole.jpg");
         slidesArray.add(urlList);
+
+        urlList = new ArrayList<>();
+        //kolejne slajdy
+        slidesArray.add(urlList);
+
         addIncident("Ukąszenie żmiji", R.mipmap.ic_launcher, slidesArray.get(0));
+        addIncident("Poparzenie", R.mipmap.ic_launcher_round, slidesArray.get(1));
         return incidents;
     }
 

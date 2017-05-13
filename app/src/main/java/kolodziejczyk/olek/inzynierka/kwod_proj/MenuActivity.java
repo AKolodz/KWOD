@@ -51,7 +51,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     private void setTextViews() {
-        appName.setText("Nazwa aplikacji");
-        appDescription.setText("Krotki opis aplikacji");
+        appName.setText(R.string.app_name);
+        appDescription.setText(R.string.app_description);
     }
 }
