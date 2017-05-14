@@ -1,10 +1,10 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.mvp;
 
 import java.util.ArrayList;
 
-import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Incident;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
-import kolodziejczyk.olek.inzynierka.kwod_proj.Slide;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Slide;
 import lombok.NoArgsConstructor;
 
 /**

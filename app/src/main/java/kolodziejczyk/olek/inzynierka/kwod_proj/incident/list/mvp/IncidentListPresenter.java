@@ -1,8 +1,8 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.mvp;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.mvp;
 
 import java.util.ArrayList;
 
-import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Incident;
 
 /**
  * Created by A. Kołodziejczyk on 2017-05-13.

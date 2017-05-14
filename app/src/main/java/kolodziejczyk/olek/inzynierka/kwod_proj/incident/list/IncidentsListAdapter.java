@@ -1,4 +1,4 @@
-package kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list;
+package kolodziejczyk.olek.inzynierka.kwod_proj.incident.list;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import kolodziejczyk.olek.inzynierka.kwod_proj.Incident;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Incident;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

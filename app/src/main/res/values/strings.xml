@@ -5,4 +5,15 @@
 
     <string name="prepare_report_button">Prepare Report</string>
     <string name="incidents_list_button">Incidents List</string>
+    <string name="przyczyna_podejrzenie">Przyczyna/Podejrzenie</string>
+    <string name="objawy_uwagi">Objawy / Uwagi:</string>
+    <string name="utrata_przytomnosci">Utrata przytomności?</string>
+    <string name="zatrzymanie_krazenia">Zatrzymanie akcji serca?</string>
+    <string name="zapisz">Zapisz</string>
+    <string name="wczytaj">Wczytaj</string>
+    <string name="czas_zatrzymania">Zatrzymanie przez jaki czas? (min)</string>
+    <string name="przyjmuje_leki_jakie">Czy przyjmuje leki? Jakie?</string>
+    <string name="alergie">Alergie i uczulenia? Jakie?</string>
+    <string name="uwagi">Dodatkowe uwagi:</string>
+    <string name="dodatkowe_urazy">Dodatkowe urazy:</string>
 </resources>

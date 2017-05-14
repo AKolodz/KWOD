@@ -3,14 +3,13 @@ package kolodziejczyk.olek.inzynierka.kwod_proj;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import kolodziejczyk.olek.inzynierka.kwod_proj.incidents_list.IncidentsListActivity;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.IncidentsListActivity;
+import kolodziejczyk.olek.inzynierka.kwod_proj.report.ReportActivity;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -34,20 +33,13 @@ public class MenuActivity extends AppCompatActivity {
 
         setTextViews();
         setOnClickListeners();
-
-
     }
 
     private void setOnClickListeners() {
-        showList.setOnClickListener(v -> {
-            Intent intent=new Intent(getApplicationContext(),IncidentsListActivity.class);
-            startActivity(intent);
-        });
-
+        showList.setOnClickListener(v ->
+                startActivity(new Intent(getApplicationContext(), IncidentsListActivity.class)));
         prepareReport.setOnClickListener(v ->
-                Toast.makeText(getApplicationContext(),"Clicked",Toast.LENGTH_SHORT).show());
-
-
+                startActivity(new Intent(getApplicationContext(), ReportActivity.class)));
     }
 
     private void setTextViews() {
