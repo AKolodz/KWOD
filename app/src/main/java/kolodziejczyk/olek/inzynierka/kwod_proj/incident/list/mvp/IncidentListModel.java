@@ -29,8 +29,12 @@ public class IncidentListModel implements IncidentListMVP.Model {
         //kolejne slajdy
         slidesArray.add(urlList);
 
-        addIncident("Ukąszenie żmiji", R.mipmap.ic_launcher, slidesArray.get(0));
-        addIncident("Poparzenie", R.mipmap.ic_launcher_round, slidesArray.get(1));
+        addIncident("Ukąszenie żmiji", R.drawable.snake_24, slidesArray.get(0));
+        addIncident("Poparzenie", R.drawable.fire_element_24, slidesArray.get(1));
+        addIncident("Udar", R.drawable.brain_24, slidesArray.get(2));
+        addIncident("Utrata przytomności", R.drawable.base_jumping_24, slidesArray.get(3));
+        addIncident("Podtopienie", R.drawable.ic_pool_black_24dp, slidesArray.get(4));
+        addIncident("Złamanie", R.drawable.triangular_bandage_24, slidesArray.get(5));
         return incidents;
     }
 
