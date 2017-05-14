@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    android:padding="4dp">
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/reason_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="@string/przyczyna_podejrzenie"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/objawy_uwagi"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/consciousness_cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/utrata_przytomnosci" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/heart_pause_cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:checked="false"
+                android:text="@string/zatrzymanie_krazenia" />
+
+            <EditText
+                android:id="@+id/heart_pause_duration_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:hint="@string/czas_zatrzymania"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/medicament_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/przyjmuje_leki_jakie"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/allergies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/alergie"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/additional_injuries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dodatkowe_urazy"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/additional_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/uwagi"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/zapisz" />
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wczytaj" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
