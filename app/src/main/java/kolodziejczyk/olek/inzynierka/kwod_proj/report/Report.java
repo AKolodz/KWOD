@@ -20,5 +20,5 @@ public class Report {
     String allergies;
     boolean lostOfConsciousness;
     boolean heartRatePause;
-    int heartRatePauseLength;
+    String heartRatePauseLength;
 }
