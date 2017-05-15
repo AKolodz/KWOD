@@ -118,8 +118,6 @@ public class ReportActivity extends AppCompatActivity {
         heartPauseDuration.setText(report.getHeartRatePauseLength());
         heartStop.setChecked(report.isHeartRatePause());
         consciousness.setChecked(report.isLostOfConsciousness());
-
-
     }
 
     private Report loadReport() {
@@ -133,8 +131,6 @@ public class ReportActivity extends AppCompatActivity {
         String jsonReport = gson.toJson(report);
         sharedEditor.putString(REPORT_KEY, jsonReport);
         sharedEditor.commit();
-
-
     }
 
     private Report getReportData() {
