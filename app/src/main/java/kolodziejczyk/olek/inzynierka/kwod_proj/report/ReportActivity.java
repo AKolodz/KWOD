@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 
 import butterknife.BindView;
@@ -49,8 +48,6 @@ public class ReportActivity extends AppCompatActivity {
     @BindView(R.id.heart_pause_cb)
     CheckBox heartStop;
 
-    @BindView(R.id.heart_pause_duration_et)
-    EditText heartStopDuration;
 
     private Report report = new Report();
 
@@ -66,11 +63,11 @@ public class ReportActivity extends AppCompatActivity {
     private void setOnClickListeners() {
         heartStop.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if(isChecked){
-                heartStopDuration.setVisibility(View.VISIBLE);
-                heartStopDuration.setClickable(true);
+                heartPauseDuration.setVisibility(View.VISIBLE);
+                heartPauseDuration.setClickable(true);
             }else{
-                heartStopDuration.setVisibility(View.INVISIBLE);
-                heartStopDuration.setClickable(false);
+                heartPauseDuration.setVisibility(View.INVISIBLE);
+                heartPauseDuration.setClickable(false);
             }
         });
 
