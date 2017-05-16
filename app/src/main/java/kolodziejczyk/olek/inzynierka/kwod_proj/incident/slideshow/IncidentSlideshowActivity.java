@@ -1,6 +1,7 @@
 package kolodziejczyk.olek.inzynierka.kwod_proj.incident.slideshow;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -21,6 +22,9 @@ public class IncidentSlideshowActivity extends AppCompatActivity {
     @BindView(R.id.pager)
     ViewPager viewPager;
 
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+
     private ArrayList<Slide> slides = new ArrayList<>();
 
     @Override
@@ -30,7 +34,12 @@ public class IncidentSlideshowActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         slides = (ArrayList<Slide>) getIntent().getSerializableExtra(IncidentsListActivity.SLIDES);
         setViewPager();
+        setTabLayout();
 
+    }
+
+    private void setTabLayout() {
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     private void setViewPager() {
