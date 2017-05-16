@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.CallFabView;
 import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.IncidentsListActivity;
 import kolodziejczyk.olek.inzynierka.kwod_proj.report.ReportActivity;
+import lombok.Getter;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -24,6 +27,7 @@ public class MenuActivity extends AppCompatActivity {
 
     @BindView(R.id.report_button)
     Button prepareReport;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

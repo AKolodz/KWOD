@@ -4,12 +4,15 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
+import kolodziejczyk.olek.inzynierka.kwod_proj.incident.CallFabView;
 import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Slide;
 import kolodziejczyk.olek.inzynierka.kwod_proj.incident.list.IncidentsListActivity;
 
@@ -25,6 +28,9 @@ public class IncidentSlideshowActivity extends AppCompatActivity {
     @BindView(R.id.tab_layout)
     TabLayout tabLayout;
 
+    @BindView(R.id.views_container)
+    FrameLayout viewsContainer;
+
     private ArrayList<Slide> slides = new ArrayList<>();
 
     @Override
@@ -35,6 +41,8 @@ public class IncidentSlideshowActivity extends AppCompatActivity {
         slides = (ArrayList<Slide>) getIntent().getSerializableExtra(IncidentsListActivity.SLIDES);
         setViewPager();
         setTabLayout();
+
+        viewsContainer.addView(new CallFabView(this));
 
     }
 

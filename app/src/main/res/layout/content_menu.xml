@@ -9,6 +9,8 @@
     tools:context="kolodziejczyk.olek.inzynierka.kwod_proj.MenuActivity"
     tools:showIn="@layout/activity_menu">
 
+    <include layout="@layout/views_container"/>
+
     <TextView
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
