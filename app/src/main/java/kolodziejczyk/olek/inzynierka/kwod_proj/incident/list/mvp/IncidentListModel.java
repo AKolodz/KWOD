@@ -40,7 +40,7 @@ public class IncidentListModel implements IncidentListMVP.Model {
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
-        urlList.add(new Slide("http://urbanatural.in/tips/wp-content/uploads/2016/08/unconscious-300x297.gif",
+        urlList.add(new Slide("http://4.bp.blogspot.com/--YvNw_Q91XQ/VMluWHa0eHI/AAAAAAAAErg/zi39xEec9iQ/s1600/ALERTA.jpg",
                 "1. Wynieś poszkodowanego z miejsca, w którym omdlał (np. kościół).\n" +
                         "2. Jeśli to niemożliwe zapewnij dostępu świeżego powietrza.\n" +
                         "3. Ułóż poszkodowanego na wznak (na plecach).\n"));
