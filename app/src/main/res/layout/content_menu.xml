@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:padding="8dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="kolodziejczyk.olek.inzynierka.kwod_proj.MenuActivity"
     tools:showIn="@layout/activity_menu">
@@ -16,6 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="App name"
+        android:textColor="@color/colorBlack"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -30,6 +31,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:text="Short description"
+        android:textColor="@color/colorBlack"
         android:textSize="20sp" />
 
     <Button
@@ -46,8 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/report_button"
+        android:layout_alignEnd="@+id/report_button"
+        android:layout_alignStart="@+id/report_button"
         android:layout_centerHorizontal="true"
-        android:layout_margin="4dp"
         android:text="@string/incidents_list_button" />
 
 
