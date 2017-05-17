@@ -35,7 +35,6 @@ public class IncidentSlideshowActivity extends AppCompatActivity {
         slides = (ArrayList<Slide>) getIntent().getSerializableExtra(IncidentsListActivity.SLIDES);
         setViewPager();
         setTabLayout();
-
     }
 
     private void setTabLayout() {

@@ -3,8 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="app_description">Opis aplikacji</string>
 
-    <string name="prepare_report_button">Prepare Report</string>
-    <string name="incidents_list_button">Incidents List</string>
+    <string name="prepare_report_button">Raport</string>
+    <string name="incidents_list_button">Lista zdarzeń</string>
     <string name="przyczyna_podejrzenie">Przyczyna/Podejrzenie</string>
     <string name="objawy_uwagi">Objawy / Uwagi:</string>
     <string name="utrata_przytomnosci">Utrata przytomności?</string>
