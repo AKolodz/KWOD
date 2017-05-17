@@ -29,8 +29,7 @@ public class IncidentListModel implements IncidentListMVP.Model {
         urlList = new ArrayList<>();
         urlList.add(new Slide("https://st.depositphotos.com/2131499/3730/v/950/depositphotos_37307521-stock-illustration-fire-flame.jpg",
                 Strings.oparzenia1));
-        urlList.add(new Slide("https://previews.123rf.com/images/yayayoy/yayayoy1102/yayayoy110200033/8894917-Ambulance-cartoon-Stock-Photo.jpg",
-                Strings.oparzenie2));
+        urlList.add(new Slide("http://osp.bestwina.pl/wp-content/uploads/2017/03/karetka.jpg", Strings.oparzenie2));
         urlList.add(new Slide("http://www.sklepbhpippoz.pl/galerie/z/znak-zakaz-noszenia-bizu_3371.jpg", Strings.oparzenie3));
         urlList.add(new Slide("http://static.scholaris.pl/resources/d856818295880620cd32d36c4b1f0e62/999/20130813103111000000/1051.png", Strings.oparzenie4));
         urlList.add(new Slide("http://www.nabrozszkola.republika.pl/11.6.1.jpg", Strings.oparzenie5));

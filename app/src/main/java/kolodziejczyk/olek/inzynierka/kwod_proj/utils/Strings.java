@@ -41,11 +41,11 @@ public class Strings {
     public static final String boczna4="4. Przytrzymując dłoń dociśniętą do policzka i stabilizując własną ręką głowę pociągnij " +
             "za kolano podciągniętej nogi i delikatnie obróć osobę w twoim kierunku.Upewnij się, " +
             "że drogi oddechowe są drożne, a oddech nadal wydolny.\n";
-    public static final String zlamanie1="Aby prawidłowo udzielić pierwszej pomocy, najpierw musisz określić rodzaj urazu. Czy jest to:\n" +
-            "Złamanie - objawia się silnym bólem, obrzękiem i zmianą koloru skóry w miejscu urazu oraz niemożnością poruszania kończyną. Przy złamaniu otwartym widać kości i tkanki sąsiadujące.\n" +
-            "Skręcenie -  najczęściej ulegają mu stawy. Charakteryzuje się opuchlizną i możliwością wykonywania nietypowych ruchów.\n" +
-            "Zwichnięcie - przy zwichnięciu nie jest możliwa zmiana ułożenia kończyny. Objawia się ono bólem, obrzękiem oraz zniekształceniem miejsca urazu.\n" +
-            "Aby pomóc poszkodowanemu, który złamał, skręcił lub zwichnął kończynę, wezwij pogotowie, a następnie udziel poszkodowanemu pierwszej pomocy.\n";
+    public static final String zlamanie1="Aby prawidłowo udzielić pierwszej pomocy, określ rodzaj urazu.\n" +
+            "Złamanie - objawia się silnym bólem, obrzękiem i zmianą koloru skóry w miejscu urazu oraz niemożnością poruszania kończyną.\n" +
+            "Skręcenie -  charakteryzuje się opuchlizną i możliwością wykonywania nietypowych ruchów.\n" +
+            "Zwichnięcie - nie jest możliwa zmiana ułożenia kończyny. Objawia się bólem, obrzękiem oraz zniekształceniem miejsca urazu.\n" +
+            "W razie urazu wezwij pogotowie, a następnie udziel poszkodowanemu pierwszej pomocy.";
     public static final String zlamanie2="W przypadku złamania:\n" +
             "kości udowej - obłóż kończynę sztywnymi przedmiotami (np. zrolowanym płaszczem, kocem).\n";
     public static final String zlamanie3="W przypadku złamania:\n" +
