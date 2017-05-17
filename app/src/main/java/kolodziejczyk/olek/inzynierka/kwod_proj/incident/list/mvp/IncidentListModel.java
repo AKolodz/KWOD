@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import kolodziejczyk.olek.inzynierka.kwod_proj.R;
 import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Incident;
 import kolodziejczyk.olek.inzynierka.kwod_proj.incident.Slide;
+import kolodziejczyk.olek.inzynierka.kwod_proj.utils.Strings;
 import lombok.NoArgsConstructor;
 
 /**
@@ -26,70 +27,67 @@ public class IncidentListModel implements IncidentListMVP.Model {
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
-        urlList.add(new Slide("http://static.scholaris.pl/resources/d856818295880620cd32d36c4b1f0e62/999/20130813103111000000/1051.png",
-                "Schłódź oparzone miejsce letnią wodą."));
+        urlList.add(new Slide("https://st.depositphotos.com/2131499/3730/v/950/depositphotos_37307521-stock-illustration-fire-flame.jpg",
+                Strings.oparzenia1));
+        urlList.add(new Slide("https://previews.123rf.com/images/yayayoy/yayayoy1102/yayayoy110200033/8894917-Ambulance-cartoon-Stock-Photo.jpg",
+                Strings.oparzenie2));
+        urlList.add(new Slide("http://www.sklepbhpippoz.pl/galerie/z/znak-zakaz-noszenia-bizu_3371.jpg", Strings.oparzenie3));
+        urlList.add(new Slide("http://static.scholaris.pl/resources/d856818295880620cd32d36c4b1f0e62/999/20130813103111000000/1051.png", Strings.oparzenie4));
+        urlList.add(new Slide("http://www.nabrozszkola.republika.pl/11.6.1.jpg", Strings.oparzenie5));
+        urlList.add(new Slide("https://www.wykop.pl/cdn/c3201142/comment_zlB2UnSMXna3Mc4oaIbQlCWCMoU4fPUU,w400.jpg", Strings.oparzenie6));
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
-        urlList.add(new Slide("http://blogstar.pl/wp-content/uploads/2015/10/udar-objawy.jpg", "1. Poproś osobę, aby się uśmiechęła\n" +
-                "2. Poproś, aby osoba wstała lub podniosła obie ręce do góry.\n" +
-                "3. Poproś, aby osoba powtórzyła zdanie: Czarna krowa jadła trawę.\n" +
-                "4. Zapytaj osobę, czy nie pogorszyło się jej widzenie." +
-                "Opadający kącik ust, problemy z koordynacją ruchową, zaburzenia widzenia lub mowy to objawy udar, " +
-                "zadzwoń niezwołczenie po pogotowie."));
+        urlList.add(new Slide("http://twasul.info/wp-content/uploads/2017/03/709px-Bells_palsy_diagram-1024x756.jpg", Strings.udar1));
+        urlList.add(new Slide("https://www.fairview.org/fv/groups/public/documents/images/104444.jpg", Strings.udar2));
+        urlList.add(new Slide("http://betexperts.com.pl/wp-content/uploads/Zaburzenia%20mowy.jpg", Strings.udar3));
+        urlList.add(new Slide("http://dooktor.pl/wp-content/uploads/2014/03/wzrokk.jpg", Strings.udar4));
+        urlList.add(new Slide("http://blogstar.pl/wp-content/uploads/2015/10/udar-objawy.jpg", Strings.udar5));
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
-        urlList.add(new Slide("http://4.bp.blogspot.com/--YvNw_Q91XQ/VMluWHa0eHI/AAAAAAAAErg/zi39xEec9iQ/s1600/ALERTA.jpg",
-                "1. Wynieś poszkodowanego z miejsca, w którym omdlał (np. kościół).\n" +
-                        "2. Jeśli to niemożliwe zapewnij dostępu świeżego powietrza.\n" +
-                        "3. Ułóż poszkodowanego na wznak (na plecach).\n"));
+        urlList.add(new Slide("http://4.bp.blogspot.com/--YvNw_Q91XQ/VMluWHa0eHI/AAAAAAAAErg/zi39xEec9iQ/s1600/ALERTA.jpg", Strings.omdlenie1));
         urlList.add(new Slide("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-2.jpg",
-                "4. Położ poszkodowanego na plecach i udrożnij drogi oddechowe poprzez odgięcie głowy do tyłu."));
+                Strings.omdlenie2));
         urlList.add(new Slide ("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-3.jpg",
-                " 5. Sprawdź czy poszkodowany oddycha. \n" +
-                        "W czasie 10 sekund powinniśmy zaobserwować co najmniej 2 oddechy."));
-        urlList.add(new Slide("http://www.kurierdabrowski.pl/wp-content/uploads/omdlenie.jpg",
-                        "6. Jeśli poszkodowany nie oddycha przejdź do resuscytacji krążeniowo - oddechowej.\n" +
-                                "Jeśli poszkodowany oddycha unieś nogi poszkodowanego do góry.\n"));
-        urlList.add(new Slide("https://blog.bilety24.pl/wp-content/uploads/2016/01/Wykrzyknik-1024x1024.jpg",
-                "NIE NALEŻY:\n" +
-                        "- szarpać poszkodowanego, klepać po twarzy, zadawać bólu,\n" +
-                        "- cucić za pomocą soli trzeźwiących ani innych środków,\n" +
-                        "- chlapać wodą, wlewać napojów ani wpychać jedzenia do ust,\n" +
-                        "- podawać żadnych leków (!).\n"));
+                Strings.omdlenie3));
+        urlList.add(new Slide("http://www.kurierdabrowski.pl/wp-content/uploads/omdlenie.jpg", Strings.omdlenie4));
+        urlList.add(new Slide("https://blog.bilety24.pl/wp-content/uploads/2016/01/Wykrzyknik-1024x1024.jpg", Strings.omdlenie5));
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
         urlList.add(new Slide("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-2.jpg",
-                "Połóż poszkodowanego na plecach, odchyl jego głowę do tyłu, aby udrożnić drogi oddechowe."));
+                Strings.rko1));
         urlList.add(new Slide("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-3.jpg",
-                "Sprawdź czy poszkodowany oddycha.\n" +
-                        "Prowadz obserwację przez 10 sekund. W tym czasie powinny wystąpić co najmniej dwa oddechy.\n" +
-                        "Jeśli poszkodowany nie oddycha niezwłocznie wezwij pomoc i przystąp do resuscytacji krążeniowo-oddechowej.\n" +
-                        "Jeśli poszkodowany oddycha ułoż go w pozycji bocznej ustalonej."));
+                Strings.rko2));
         urlList.add(new Slide("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-4d.jpg",
-                "Wykonaj 30 uciśnieć klatki piersiowej."));
+                Strings.rko3));
         urlList.add(new Slide("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-6.jpg",
-                "Wykonaj dwa wdechy.\n" +
-                        "Jeśli poszkodowany w dalszym ciągu nie oddycha kontynuuj resuscytację wykonując na zmianę 30 uciśnięć i 2 wdechy.\n" +
-                        "Jeśli poszkodowany zaczął oddychać ułoż go w pozycji bocznej ustalonej i kontroluj czy nie ustał oddech.\n" +
-                        "Zaczekaj z poszkodowanym do przyjazdu pogotowia."));
+                Strings.rko4));
         slidesArray.add(urlList);
 
         urlList= new ArrayList<>();
         urlList.add(new Slide("http://4.bp.blogspot.com/-J1PTNsTf4HA/VobcWnjPlfI/AAAAAAAAAIA/EqhQnTFDVO8/s320/1.png",
-                "1. Rękę bliższą Tobie ułóż pod kątem prostym w stosunku do ciała," +
-                        " a następnie zegnij w łokciu pod kątem prostym z dłonią skierowaną do góry.\n"));
+                Strings.boczna1));
         urlList.add(new Slide("http://3.bp.blogspot.com/-c8V6wJprdZE/VobckgmNF7I/AAAAAAAAAII/gIjvdn8_334/s320/2.png",
-                "2. Drugą rękę przytrzymaj przy policzku wnętrzem dłoni na zewnątrz."));
+                Strings.boczna2));
         urlList.add(new Slide("http://4.bp.blogspot.com/-xKtVcq3hqNA/Vobcp6fL4SI/AAAAAAAAAIQ/lc-MtvJvJOU/s320/3.png",
-                "3. W tym samym momencie złap za nogę leżącą dalej od siebie za kolano i pociągnij ją ku górze."));
+                Strings.boczna3));
         urlList.add(new Slide("http://2.bp.blogspot.com/-EKiVq6dDHXc/VobctDZ8F7I/AAAAAAAAAIY/XkhGL2HtrvQ/s320/4.png",
-                "4. Przytrzymując dłoń dociśniętą do policzka i stabilizując własną ręką głowę pociągnij " +
-                        "za kolano podciągniętej nogi i delikatnie obróć osobę w twoim kierunku.Upewnij się, " +
-                        "że drogi oddechowe są drożne, a oddech nadal wydolny.\n"));
+                Strings.boczna4));
         slidesArray.add(urlList);
+
+        urlList=new ArrayList<>();
+        urlList.add(new Slide("http://olmamc.pl/wp-content/uploads/2015/04/Czerwony_znak_zapytania.png", Strings.zlamanie1));
+        urlList.add(new Slide("https://www.akademiaparp.gov.pl/pills/JPPPZ/JPPPZ_thumb.jpg", Strings.zlamanie2));
+        urlList.add(new Slide("http://stridestrong.com/wp-content/uploads/2016/04/Skeletal-diagram-of-a-rib-fracture.jpg", Strings.zlamanie3));
+        urlList.add(new Slide("http://www.iskra65.republika.pl/grafiki/chusta.jpg", Strings.zlamanie4));
+        urlList.add(new Slide("http://www.asrpedia.ir/wp-content/uploads/2016/11/1081-600x330.jpg", Strings.zlamanie5));
+        urlList.add(new Slide("https://blog.bilety24.pl/wp-content/uploads/2016/01/Wykrzyknik-1024x1024.jpg",Strings.zlamanie6));
+        slidesArray.add(urlList);
+
+
+
 
 
         addIncident("Ukąszenie żmii", R.drawable.snake_24, slidesArray.get(0));
@@ -98,8 +96,9 @@ public class IncidentListModel implements IncidentListMVP.Model {
         addIncident("Utrata przytomności", R.drawable.base_jumping_24, slidesArray.get(3));
         addIncident("Zatrzymanie akcji serca", R.drawable.medical_heart_24, slidesArray.get(4));
         addIncident("Ułożenie w pozycji bocznej ustalonej", R.drawable.physical_therapy_24, slidesArray.get(5));
+        addIncident("Złamanie zamknięte", R.drawable.triangular_bandage_24, slidesArray.get(6));
         //addIncident("Podtopienie", R.drawable.ic_pool_black_24dp, slidesArray.get(5));
-        //addIncident("Złamanie", R.drawable.triangular_bandage_24, slidesArray.get(6));
+
         return incidents;
     }
 
