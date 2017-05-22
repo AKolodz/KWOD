@@ -4,8 +4,8 @@
     <string name="app_description">Aplikacja mająca na celu dostarczenia informacji na
         temat przeprowadzenia wstępnej diagnostyki i udzielania pierwszej pomocy w sytuacjach
         mogących zagrażać życiu lub zdrowiu </string>
-    <string name="prepare_report_button">Prepare Report</string>
-    <string name="incidents_list_button">Incidents List</string>
+    <string name="prepare_report_button">Raport</string>
+    <string name="incidents_list_button">Lista zdarzeń</string>
     <string name="przyczyna_podejrzenie">Przyczyna/Podejrzenie</string>
     <string name="objawy_uwagi">Objawy / Uwagi:</string>
     <string name="utrata_przytomnosci">Utrata przytomności?</string>

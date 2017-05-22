@@ -9,6 +9,8 @@
     tools:context="kolodziejczyk.olek.inzynierka.kwod_proj.MenuActivity"
     tools:showIn="@layout/activity_menu">
 
+    <include layout="@layout/views_container" />
+
     <TextView
         android:id="@+id/app_name"
         android:layout_marginTop="8dp"
@@ -38,24 +40,27 @@
         android:textAlignment="center"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/report_button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_margin="4dp"
-        android:text="@string/prepare_report_button" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/incident_list_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/report_button"
-        android:layout_alignEnd="@+id/report_button"
-        android:layout_alignStart="@+id/report_button"
-        android:layout_centerHorizontal="true"
-        android:text="@string/incidents_list_button" />
+        <Button
+            android:id="@+id/report_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/prepare_report_button" />
+
+        <Button
+            android:id="@+id/incident_list_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/incidents_list_button" />
+    </LinearLayout>
 
 
 </RelativeLayout>
