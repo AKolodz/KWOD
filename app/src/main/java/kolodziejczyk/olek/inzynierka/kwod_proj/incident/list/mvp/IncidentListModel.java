@@ -20,15 +20,15 @@ public class IncidentListModel implements IncidentListMVP.Model {
 
     @Override
     public ArrayList<Incident> getIncidentsList() {
-        //TODO: make it more clear, add rest of incidents here
-        urlList.add(new Slide("http://pobierak.jeja.pl/images/5/f/a/143031_wonsz.jpg", "Wonsz wiolinowy"));
-        urlList.add(new Slide("http://pobierak.jeja.pl/images/5/6/2/154429_wonsz.jpg", "Wonsz do morza"));
-        urlList.add(new Slide("http://pobierak.jeja.pl/images/0/1/e/126850_olej-szkole.jpg", "Wonsz LamAlpaka"));
+        urlList.add(new Slide("http://www.sklepbhpippoz.pl/galerie/z/znak-zakaz-noszenia-bizu_3371.jpg", Strings.zmija1));
+        urlList.add(new Slide("http://modernserviceweapons.com/wp-content/uploads/2014/01/no-knife-iso-prohibition-sign-is-1161.png",
+                Strings.zmija2));
+        urlList.add(new Slide("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-3.jpg", Strings.zmija3));
+        urlList.add(new Slide("http://osp.bestwina.pl/wp-content/uploads/2017/03/karetka.jpg", Strings.zmija4));
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
-        urlList.add(new Slide("https://st.depositphotos.com/2131499/3730/v/950/depositphotos_37307521-stock-illustration-fire-flame.jpg",
-                Strings.oparzenia1));
+        urlList.add(new Slide("http://amb24.pl/images/ogien1.png", Strings.oparzenia1));
         urlList.add(new Slide("http://osp.bestwina.pl/wp-content/uploads/2017/03/karetka.jpg", Strings.oparzenie2));
         urlList.add(new Slide("http://www.sklepbhpippoz.pl/galerie/z/znak-zakaz-noszenia-bizu_3371.jpg", Strings.oparzenie3));
         urlList.add(new Slide("http://static.scholaris.pl/resources/d856818295880620cd32d36c4b1f0e62/999/20130813103111000000/1051.png", Strings.oparzenie4));
@@ -51,7 +51,7 @@ public class IncidentListModel implements IncidentListMVP.Model {
         urlList.add(new Slide ("http://kobietamag.pl/wp-content/uploads/2012/01/pierwsza-pomoc-ratowanie-zycia-3.jpg",
                 Strings.omdlenie3));
         urlList.add(new Slide("http://www.kurierdabrowski.pl/wp-content/uploads/omdlenie.jpg", Strings.omdlenie4));
-        urlList.add(new Slide("https://blog.bilety24.pl/wp-content/uploads/2016/01/Wykrzyknik-1024x1024.jpg", Strings.omdlenie5));
+        urlList.add(new Slide("http://sektor3.slubice.pl/wp-content/uploads/2015/02/wykrzyknik-e1338312656830.png", Strings.omdlenie5));
         slidesArray.add(urlList);
 
         urlList = new ArrayList<>();
@@ -80,9 +80,9 @@ public class IncidentListModel implements IncidentListMVP.Model {
         urlList.add(new Slide("http://olmamc.pl/wp-content/uploads/2015/04/Czerwony_znak_zapytania.png", Strings.zlamanie1));
         urlList.add(new Slide("https://www.akademiaparp.gov.pl/pills/JPPPZ/JPPPZ_thumb.jpg", Strings.zlamanie2));
         urlList.add(new Slide("http://stridestrong.com/wp-content/uploads/2016/04/Skeletal-diagram-of-a-rib-fracture.jpg", Strings.zlamanie3));
-        urlList.add(new Slide("http://www.iskra65.republika.pl/grafiki/chusta.jpg", Strings.zlamanie4));
+        urlList.add(new Slide("http://emedical24.pl/public/assets/chusta.jpg", Strings.zlamanie4));
         urlList.add(new Slide("http://www.asrpedia.ir/wp-content/uploads/2016/11/1081-600x330.jpg", Strings.zlamanie5));
-        urlList.add(new Slide("https://blog.bilety24.pl/wp-content/uploads/2016/01/Wykrzyknik-1024x1024.jpg",Strings.zlamanie6));
+        urlList.add(new Slide("http://sektor3.slubice.pl/wp-content/uploads/2015/02/wykrzyknik-e1338312656830.png",Strings.zlamanie6));
         slidesArray.add(urlList);
 
 

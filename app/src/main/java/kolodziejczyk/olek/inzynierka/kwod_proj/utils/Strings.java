@@ -5,11 +5,11 @@ package kolodziejczyk.olek.inzynierka.kwod_proj.utils;
  */
 
 public class Strings {
-    public static final String udar1= "1. Poproś osobę, aby się uśmiechęła.\n";
+    public static final String udar1= "1. Poproś osobę, aby się uśmiechnęła.\n";
     public static final String udar2= "2. Poproś, aby osoba wstała lub podniosła obie ręce do góry.\n";
     public static final String udar3="3. Poproś, aby osoba powtórzyła zdanie: Czarna krowa jadła trawę.\n";
     public static final String udar4="4. Zapytaj osobę, czy nie pogorszyło się jej widzenie.\n";
-    public static final String udar5="Opadający kącik ust, problemy z koordynacją ruchową, zaburzenia widzenia lub mowy to objawy udar,\n" +
+    public static final String udar5="Opadający kącik ust, problemy z koordynacją ruchową, zaburzenia widzenia lub mowy to objawy udaru,\n" +
             "zadzwoń niezwołczenie po pogotowie.\n";
     public static final String omdlenie1= "1. Wynieś poszkodowanego z miejsca, w którym omdlał (np. kościół).\n" +
                         "2. Jeśli to niemożliwe zapewnij dostępu świeżego powietrza.\n" +
@@ -41,15 +41,15 @@ public class Strings {
     public static final String boczna4="4. Przytrzymując dłoń dociśniętą do policzka i stabilizując własną ręką głowę pociągnij " +
             "za kolano podciągniętej nogi i delikatnie obróć osobę w twoim kierunku.Upewnij się, " +
             "że drogi oddechowe są drożne, a oddech nadal wydolny.\n";
-    public static final String zlamanie1="Aby prawidłowo udzielić pierwszej pomocy, określ rodzaj urazu.\n" +
-            "Złamanie - objawia się silnym bólem, obrzękiem i zmianą koloru skóry w miejscu urazu oraz niemożnością poruszania kończyną.\n" +
-            "Skręcenie -  charakteryzuje się opuchlizną i możliwością wykonywania nietypowych ruchów.\n" +
-            "Zwichnięcie - nie jest możliwa zmiana ułożenia kończyny. Objawia się bólem, obrzękiem oraz zniekształceniem miejsca urazu.\n" +
+    public static final String zlamanie1="Określ rodzaj urazu\n" +
+            "Złamanie - silny ból, obrzęk i zmianą koloru skóry w miejscu urazu, brak możliwości poruszania kończyną.\n" +
+            "Skręcenie - opuchlizna i możliwość wykonywania nietypowych ruchów.\n" +
+            "Zwichnięcie - niemożliwa zmiana ułożenia kończyny, ból, obrzęk.\n" +
             "W razie urazu wezwij pogotowie, a następnie udziel poszkodowanemu pierwszej pomocy.";
     public static final String zlamanie2="W przypadku złamania:\n" +
             "kości udowej - obłóż kończynę sztywnymi przedmiotami (np. zrolowanym płaszczem, kocem).\n";
     public static final String zlamanie3="W przypadku złamania:\n" +
-            "żeber - ułóż poszkodowanego na chorym boku";
+            "żeber - ułóż poszkodowanego na chorym boku.";
     public static final String zlamanie4="W przypadku złamania:\n" +
             "ręki - unieruchom kończynę za pomocą chusty trójkątnej.";
     public static final String zlamanie5="Jeżeli poszkodowany zwichnął lub skręcił staw, obłóż powstały obrzęk zimnymi okładami.";
@@ -58,12 +58,21 @@ public class Strings {
             "Jeśli dodatkowo podejrzewasz uraz kręgosłupa lub czaszki - nie przenoś rannego!\n";
     public static final String oparzenia1="Jeśli ubranie się pali lub tli - ugaś je. \n" +
             "Do tego celu NIE używaj gaśnicy.";
-    public static final String oparzenie2="Wezwij pogotowie jeśli oparzenie jest rozlegle.";
+    public static final String oparzenie2="Wezwij pogotowie jeśli oparzenie jest rozległe.";
     public static final String oparzenie3="Zdejmij ubranie. Jeżeli ubranie jest wtopione w ciało to nie zrywaj go tylko wytnij ubranie wokół rany.\n" +
-            "Jeżeli oparzona jest ręka ściągnij biżuterie - zanim narastający obrzęk uniemożliwi to.\n";
-    public static final String oparzenie4="Ochładzaj oparzona część ciała czysta chłodna woda przez ok 10 minut.";
-    public static final String oparzenie5="Ranę oparzeniową należy zabezpieczyć luźnym, jałowym opatrunkiem";
+            "Jeżeli oparzona jest ręka ściągnij biżuterię - zanim narastający obrzęk uniemożliwi to.\n";
+    public static final String oparzenie4="Ochładzaj oparzoną część ciała czystą chłodną wodą przez ok. 10 minut.";
+    public static final String oparzenie5="Ranę oparzeniową należy zabezpieczyć luźnym, jałowym opatrunkiem.";
     public static final String oparzenie6="Po ochłodzeniu poczekaj, aż oparzona skóra wyschnie, " +
-            "następnie osłoń opatrunkiem oparzeniowym np AQUA GEL, Hydro Gel, mokry opatrunek.";
+            "następnie osłoń opatrunkiem oparzeniowym np. AQUA GEL, Hydro Gel, mokry opatrunek.";
+    public static final String zmija1="Należy uspokoić poszkodowanego. Poszkodowany nie powinien się ruszać, żeby jad nie rozprzestrzeniał się po organizmie.\n" +
+            "Jeśli ukąszona zostła ręka lub noga należy ją usztywnić.\n" +
+            "Jeśli ukąszona została ręka należy zdjąć z niej zegarek i biżuterię.";
+    public static final String zmija2="NIE rozcinaj rany!\nNIE wysysaj jadu!\n" +
+            "Nie należy stosować lodu ani opasek uciskowych.\n";
+    public static final String zmija3="Jeśli osoba straci przytomność, sprawdź czy oddycha.\n" +
+            "Jeśli tak, ułóż ją w pozycji bocznej ustalonej.\n" +
+            "Jeśli nie, zacznij ją reanimować.";
+    public static final String zmija4="Po przyjeździe pogotwia koniecznie poinformuj lekarzy, że osoba została ukąszona przez żmiję.";
 
 }
