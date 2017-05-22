@@ -60,7 +60,6 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.chabbal:slidingdotsplash:1.0.2'
-
     //helper
     provided "org.projectlombok:lombok:$lombok_version"
     apt "org.projectlombok:lombok:$lombok_version"

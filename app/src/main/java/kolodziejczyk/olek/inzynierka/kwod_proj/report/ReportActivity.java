@@ -55,6 +55,7 @@ public class ReportActivity extends AppCompatActivity {
     @BindView(R.id.heart_pause_cb)
     CheckBox heartStop;
 
+
     private Report report = new Report();
     private SharedPreferences sharedPref;
     private SharedPreferences.Editor sharedEditor;
